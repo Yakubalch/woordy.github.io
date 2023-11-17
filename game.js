@@ -11,7 +11,7 @@ async function init() {
     let isLoading = true;
 
 
-    const res = await fetch("https://words.dev-apis.com/word-of-the-day?puzzle=13");
+    const res = await fetch("https://words.dev-apis.com/word-of-the-day");
     const resObj = await res.json();
     const word = resObj.word.toUpperCase();
     const wordParts = word.split("");
